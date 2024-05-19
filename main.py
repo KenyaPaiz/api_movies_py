@@ -26,7 +26,7 @@ class User(BaseModel):
 #podemos agrupar rutas por etiqueta (tags)
 @app.get('/', tags=['home'])
 def message():
-    return HTMLResponse('<h1>Hello</h1>')
+    return HTMLResponse('<h1>Hello PYTHON :)</h1>')
 
 #Ruta para el inicio de sesion
 @app.post('/login', tags=['auth'])
